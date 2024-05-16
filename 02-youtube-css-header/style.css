@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+.header {
+    /* height: 150px; */
+    background-color: #065fd4;
+    color: white;
+    font-family: sans-serif;
+    padding: 4rem;
+    background-image: url(images/background.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: -110px;
+
+}
+
+h2 {
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+
+/* // never set height and width together in img tag  */
+.header img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    vertical-align: middle;
+    
+}
+
+/* //   adjacent sibling selector (+)
+if it is in same parent element then here it will select every image element excluding the 1st img element one */   
+
+img {
+   margin-right: -20px;
+}
+
+.image-container {
+    display: inline-block;
+   
+
+}
+
