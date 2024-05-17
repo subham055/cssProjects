@@ -21,11 +21,20 @@ h1 {
     /* margin-inline: 1rem; */
     max-width: 1200px;
     margin: auto;
+
+    grid-template-areas:
+        "purple"
+        "orange"
+        "blue"
+        "green"
+        "red"
+    ;
 }
-    
+
 
 .box {
     font-size: 2rem;
+    color: white;
     min-height: 200px;
     display: flex;
     align-items: center;
@@ -34,21 +43,55 @@ h1 {
 }
 
 .box-1 {
-    background-color:#BA56F6;
+    background-color: #BA56F6;
+    grid-area: purple;
 }
 
 .box-2 {
     background-color: #FF6161;
+    grid-area: orange;
 }
 
 .box-3 {
     background-color: #505CCA;
+    grid-area: blue;
 }
 
 .box-4 {
     background-color: #3DAD99;
+    grid-area: green;
 }
 
 .box-5 {
     background-color: #BE3690;
+    grid-area: red;
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-areas:
+            "purple purple"
+            "orange blue"
+            "green blue"
+            "red red"
+        ;
+    }
+
+    .box {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        grid-template-areas:
+            "purple purple orange blue"
+            "green red red blue"
+        ;
+    }
+
+    .box {
+        font-size: 4rem;
+    }
 }
